@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li {
+  list-style-type: square;
+  margin-left: 30px;
+  padding: 2px;
+}
+
+
+.jashMsg{
+  right: 0;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  width: 28vw !important;
+  
+  z-index: 9;
+  overflow-x: hidden;
+  padding: 2vw 0;
+}
+
+.videoWrapper {
+  margin-left: 4vw;
+}
+
+.videoWarapperWidth {
+  width: 67vw !important;
+}
+
+@media (min-width: 768px) and (max-width:1380px) {
+ .videoWarapperWidth {
+  width: 60vw !important;
+}
+}
+
+@media (max-width: 640px) {
+  .jashMsg {
+    top: 52vh;
+    height: 69.333vw;
+    right: 5vw;
+    padding: 0;
+    width: 90vw !important;
+    
+  }
+  .videoWrapper {
+  margin-left: auto;
+}
+.videoWarapperWidth {
+  width: 100% !important;
+}
+}
+
+@media (min-width: 768px) {
+  .jashMsg {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jashMsg {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .jashMsg {
+    width: 50vw;
+  }
+}
+.jashMsg::-webkit-scrollbar {
+  display: none;
+}
+html,body {
+  overflow:hidden ;
+}
+
+.jashFixCta {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  width: 80vw;
+  max-width: 300px;
+}
+
+@media (min-width: 640px) {
+  .jashFixCta {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .jashFixCta {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jashFixCta {
+    width: 40vw;
+  }
+}
+
+
+.JashQue {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px 18px 4px 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  word-wrap: break-word;
+  max-width: 85vw;
+  width: fit-content;
+}
+
+@media (min-width: 640px) {
+  .JashQue {
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .JashQue {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .JashQue {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .JashQue {
+    max-width: 280px;
+  }
+}
+
+.JashQue::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left-color: #764ba2;
+  border-bottom: none;
+  border-right: none;
+}
+
+.avatarAnsJash {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px 18px 18px 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  word-wrap: break-word;
+  max-width: 85vw;
+  width: fit-content;
+}
+
+@media (min-width: 640px) {
+  .avatarAnsJash {
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .avatarAnsJash {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .avatarAnsJash {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .avatarAnsJash {
+    max-width: 280px;
+  }
+}
+
+.avatarAnsJash::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: #f5576c;
+  border-bottom: none;
+  border-left: none;
+}
+
+.chatInput {
+  justify-content: center;
+}
